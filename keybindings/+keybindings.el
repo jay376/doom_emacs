@@ -22,5 +22,11 @@
        :desc "recompile"   "r" #'recompile
        )
 
+      (:prefix ("t" . "major")
+       :desc "test-single"   "s" #'+go/test-single
+       :desc "test-rerun"   "r" #'+go/test-rerun
+       :desc "test-rerun"   "a" #'+go/test-all
+       )
+
       (:desc "search-at-point" "/" #'+default/search-project-for-symbol-at-point)
       )
