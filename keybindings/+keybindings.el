@@ -5,9 +5,10 @@
       (:prefix "g"
        (:when (featurep! :tools magit)
         :desc "Magit status"               "s"   #'magit-status
+        :desc "Magit diff"                 "d"   #'magit-diff
         :desc "Magit blame"                "b"   #'magit-blame-addition
-        :desc "Magit fetch"                "f"   #'magit-fetch
         :desc "Magit buffer log"           "l"   #'magit-log
+        :desc "Magit dispatch"             "m"   #'magit-dispatch
         )
        )
       (:desc "search-at-point" "/" #'+default/search-project-for-symbol-at-point)
