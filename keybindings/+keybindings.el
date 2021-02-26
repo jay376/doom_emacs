@@ -17,5 +17,10 @@
        :desc "Project search file"  "f" #'helm-projectile-find-file
        )
 
+      (:prefix ("c" . "compile")
+       :desc "helm-make"   "m" #'helm-make
+       :desc "recompile"   "r" #'recompile
+       )
+
       (:desc "search-at-point" "/" #'+default/search-project-for-symbol-at-point)
       )
