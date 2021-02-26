@@ -20,6 +20,7 @@
 
 (global-set-key (kbd "M-s p") 'dired-up-directory)
 (global-set-key (kbd "M-s e") 'eval-buffer)
+(global-set-key (kbd "M-s /") 'lsp-find-references)
 
 (global-set-key (kbd "M-k") 'qiang-copy-line)
                                         ;switch window

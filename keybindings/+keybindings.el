@@ -11,5 +11,10 @@
         :desc "Magit dispatch"             "m"   #'magit-dispatch
         )
        )
+      (:prefix ("p" . "project")
+       :desc "Project shell"   "s" #'projectile-run-shell
+       :desc "Project switch"  "p" #'helm-projectile-switch-project
+       )
+
       (:desc "search-at-point" "/" #'+default/search-project-for-symbol-at-point)
       )
