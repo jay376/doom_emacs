@@ -423,3 +423,32 @@ Date:    %s
    (quote
     ("/Users/fangjiezhang" "[/\\\\]\\mod*" "[/\\\\]\\vendor*" "[/\\\\]\\.git$" "[/\\\\]\\.hg$" "[/\\\\]\\.bzr$" "[/\\\\]_darcs$" "[/\\\\]\\.svn$" "[/\\\\]_FOSSIL_$" "[/\\\\]\\.idea$" "[/\\\\]\\.ensime_cache$" "[/\\\\]\\.eunit$" "[/\\\\]node_modules$" "[/\\\\]\\.fslckout$" "[/\\\\]\\.tox$" "[/\\\\]\\.stack-work$" "[/\\\\]\\.bloop$" "[/\\\\]\\.metals$" "[/\\\\]target$" "[/\\\\]\\.ccls-cache$" "[/\\\\]\\.deps$" "[/\\\\]build-aux$" "[/\\\\]autom4te.cache$" "[/\\\\]\\.reference$")))
 (setq doom-leader-alt-key "M-m")
+(setq flycheck-checker-error-threshold 10)
+
+;;; keybindings/+keybindings.el -*- lexical-binding: t; -*-
+
+;; Customized key bindings
+(map! :leader
+      (:prefix "w"
+        :desc "evil-window-vsplit" "/" #'evil-window-vsplit
+        :desc "evil-window-split" "_" #'evil-window-split
+        )
+      (:prefix "a"
+        :desc "open elfeed" "f" #'elfeed
+        )
+      (:prefix "a"
+        :desc "helm-spotify-plus" "s" #'helm-spotify-plus
+        )
+      (:prefix "a"
+        :desc "helm-spotify-plus-next" "n" #'helm-spotify-plus-next
+        )
+      (:prefix "a"
+        :desc "helm-spotify-plus-previous" "b" #'helm-spotify-plus-previous
+        )
+      (:prefix "a"
+        :desc "helm-spotify-plus-next" "p" #'helm-spotify-plus-play
+        )
+      (:prefix "a"
+        :desc "helm-spotify-plus-pause" "g" #'helm-spotify-plus-pause
+        )
+      )
