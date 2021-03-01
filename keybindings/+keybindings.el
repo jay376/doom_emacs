@@ -7,7 +7,7 @@
         :desc "Magit status"               "s"   #'magit-status
         :desc "Magit diff"                 "d"   #'magit-diff
         :desc "Magit blame"                "b"   #'magit-blame-addition
-        :desc "Magit buffer log"           "l"   #'magit-log
+        :desc "Magit buffer log"           "l"   #'magit-log-buffer-file
         :desc "Magit dispatch"             "m"   #'magit-dispatch
         )
        )
