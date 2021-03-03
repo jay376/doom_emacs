@@ -167,11 +167,11 @@
 
 ;;;;;;;; 使用空格缩进 ;;;;;;;;
 ;; indent-tabs-mode  t 使用 TAB 作格式化字符  nil 使用空格作格式化字符
-(setq indent-tabs-mode nil)
-(setq tab-always-indent nil)
-(setq tab-width 4)
-(setq default-tab-width 4)
-(setq-default indent-tabs-mode nil)
+;; (setq indent-tabs-mode nil)
+;; (setq tab-always-indent nil)
+;; (setq tab-width 4)
+;; (setq default-tab-width 4)
+;; (setq-default indent-tabs-mode nil)
 
 ;; (defun redo (&optional count)
 ;;   "Redo the the most recent undo.
@@ -316,7 +316,12 @@
 (add-hook 'c++-mode-hook 'linux-cpp-mode)
 ;; (add-hook 'c-mode-hook 'google-set-c-style)
 ;; (add-hook 'c++-mode-hook 'google-set-c-style)
-
+(add-hook 'python-mode-hook (lambda()
+                              (setq indent-tabs-mode t)
+                              (setq tab-width 8)
+                              (set-variable 'python-indent-offset 8)
+                              (set-variable 'python-indent-guess-indent-offset nil)
+                              ))
 (defun linux-c-mode ()
   (define-key c-mode-map [return] 'newline-and-indent)
   (interactive)
