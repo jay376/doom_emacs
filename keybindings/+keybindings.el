@@ -30,3 +30,6 @@
 
       (:desc "search-at-point" "/" #'+default/search-project-for-symbol-at-point)
       )
+(map! :map org-mode-map
+      "M-s RET"    #'org-insert-subheading
+      )
