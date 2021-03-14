@@ -36,4 +36,5 @@
       "M-s k" #'org-metaup
       "M-s h" #'org-metaleft
       "M-s l" #'org-metaright
+      "M-s i" #'org-toggle-item
       )
