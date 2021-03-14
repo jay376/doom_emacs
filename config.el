@@ -38,6 +38,7 @@
 (setq helm-make-arguments "-B -j40")
 (setq doom-theme 'spacemacs-dark)
 (+global-word-wrap-mode +1)
+(setq org-export-with-sub-superscripts nil)
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
