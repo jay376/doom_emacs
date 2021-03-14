@@ -469,3 +469,4 @@ same directory as the org-buffer and insert a link to this file."
 
 (global-set-key (kbd "C-c s c") 'my-org-screenshot)
 (global-set-key (kbd "M-s s ") 'grip-mode)
+(global-set-key (kbd "M-s s ") 'grip-mode)
