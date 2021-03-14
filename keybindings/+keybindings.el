@@ -32,4 +32,8 @@
       )
 (map! :map org-mode-map
       "M-s RET"    #'org-insert-subheading
+      "M-s j" #'org-metadown
+      "M-s k" #'org-metaup
+      "M-s h" #'org-metaleft
+      "M-s l" #'org-metaright
       )
