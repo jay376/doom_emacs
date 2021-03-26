@@ -55,3 +55,5 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+;; abandon lsp ask u import project when open a new file
+(setq lsp-auto-guess-root t)
