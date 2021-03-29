@@ -22,6 +22,7 @@
 (global-set-key (kbd "M-s p") 'dired-up-directory)
 (global-set-key (kbd "M-s e") 'eval-buffer)
 (global-set-key (kbd "M-s /") 'lsp-find-references)
+(global-set-key (kbd "M-s i ") 'lsp-find-implementation)
 
 (global-set-key (kbd "C-k") 'qiang-copy-line)
 (global-set-key (kbd "C-l") 'kill-visual-line)
