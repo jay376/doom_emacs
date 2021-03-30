@@ -24,8 +24,8 @@
 (global-set-key (kbd "M-s /") 'lsp-find-references)
 (global-set-key (kbd "M-s i ") 'lsp-find-implementation)
 
-(global-set-key (kbd "C-k") 'qiang-copy-line)
-(global-set-key (kbd "C-l") 'kill-visual-line)
+(global-set-key (kbd "C-l") 'qiang-copy-line)
+(global-set-key (kbd "C-k") 'kill-visual-line)
                                         ;switch window
 (global-set-key (kbd "M--") 'switch-to-prev-buffer)
 (global-set-key (kbd "M-=") 'switch-to-next-buffer)
