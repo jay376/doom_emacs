@@ -313,11 +313,8 @@
 
 ;;set C indent-style
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
-;; (add-hook 'c-mode-common-hook 'google-set-c-style)
-(add-hook 'c-mode-hook 'linux-c-mode)
-(add-hook 'c++-mode-hook 'linux-cpp-mode)
-;; (add-hook 'c-mode-hook 'google-set-c-style)
-;; (add-hook 'c++-mode-hook 'google-set-c-style)
+;; (add-hook 'c-mode-hook 'linux-c-mode)
+;; (add-hook 'c++-mode-hook 'linux-cpp-mode)
 (add-hook 'python-mode-hook (lambda()
                               (setq indent-tabs-mode t)
                               (setq tab-width 8)

@@ -57,3 +57,5 @@
 ;; they are implemented.
 ;; abandon lsp ask u import project when open a new file
 (setq lsp-auto-guess-root t)
+(add-hook 'c++-mode-hook 'google-set-c-style)
+(add-hook 'c-mode-hook 'google-set-c-style)
