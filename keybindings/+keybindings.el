@@ -37,4 +37,5 @@
       "M-s h" #'org-metaleft
       "M-s l" #'org-metaright
       "M-s i" #'org-toggle-item
+      "M-s c" #'org-ctrl-c-minus
       )
