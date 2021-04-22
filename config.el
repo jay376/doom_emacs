@@ -60,7 +60,4 @@
 (add-hook 'c++-mode-hook 'google-set-c-style)
 (add-hook 'c-mode-hook 'google-set-c-style)
 (setq gofmt-command "goimports")
-(add-hook 'go-mode-hook '(lambda ()
-                           (add-hook 'before-save-hook 'gofmt)
-                           )
-          )
+(add-hook 'before-save-hook 'gofmt-before-save)
