@@ -28,6 +28,10 @@
        :desc "test-rerun"   "a" #'+go/test-all
        )
 
+      (:prefix ("s" . "search")
+       :desc "search-buffer"   "." #'swiper-isearch-thing-at-point
+       )
+
       (:desc "search-at-point" "/" #'+default/search-project-for-symbol-at-point)
       )
 (map! :map org-mode-map
