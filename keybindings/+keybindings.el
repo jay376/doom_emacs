@@ -32,7 +32,7 @@
        :desc "search-buffer"   "." #'swiper-isearch-thing-at-point
        )
 
-      (:desc "search-at-point" "/" #'+default/search-project-for-symbol-at-point)
+      (:desc "search-at-point" "/" #'helm-projectile-grep)
       )
 (map! :map org-mode-map
       "M-s RET"    #'org-insert-subheading
