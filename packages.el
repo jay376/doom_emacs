@@ -9,6 +9,7 @@
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
 (package! helm-make)
+(package! magit-section)
 (package! spacemacs-theme)
 (package! grip-mode)
 (package! google-c-style)
