@@ -9,8 +9,8 @@
         :desc "Magit blame"                "b"   #'magit-blame-addition
         :desc "Magit buffer log"           "h"   #'magit-log-buffer-file
         :desc "Magit dispatch"             "m"   #'magit-dispatch
-        :desc "Magit buffer log"           "l"   #'git-link
-        :desc "Magit buffer log"           "c"   #'git-link-commit
+        :desc "git link"                   "l"   #'git-link
+        :desc "git commit link"            "c"   #'git-link-commit
         )
        )
       (:prefix ("p" . "project")
