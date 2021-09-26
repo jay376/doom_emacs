@@ -7,8 +7,10 @@
         :desc "Magit status"               "s"   #'magit-status
         :desc "Magit diff"                 "d"   #'magit-diff
         :desc "Magit blame"                "b"   #'magit-blame-addition
-        :desc "Magit buffer log"           "l"   #'magit-log-buffer-file
+        :desc "Magit buffer log"           "h"   #'magit-log-buffer-file
         :desc "Magit dispatch"             "m"   #'magit-dispatch
+        :desc "Magit buffer log"           "l"   #'git-link
+        :desc "Magit buffer log"           "c"   #'git-link-commit
         )
        )
       (:prefix ("p" . "project")
