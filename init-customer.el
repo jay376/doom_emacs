@@ -169,11 +169,11 @@
 
 ;;;;;;;; 使用空格缩进 ;;;;;;;;
 ;; indent-tabs-mode  t 使用 TAB 作格式化字符  nil 使用空格作格式化字符
-;; (setq indent-tabs-mode nil)
-;; (setq tab-always-indent nil)
-;; (setq tab-width 4)
-;; (setq default-tab-width 4)
-;; (setq-default indent-tabs-mode nil)
+(setq indent-tabs-mode nil)
+(setq tab-always-indent nil)
+(setq tab-width 4)
+(setq default-tab-width 4)
+(setq-default indent-tabs-mode nil)
 
 ;; (defun redo (&optional count)
 ;;   "Redo the the most recent undo.
