@@ -16,6 +16,7 @@
 (package! protobuf-mode)
 (package! projectile-ripgrep)
 (package! git-link)
+(package! terraform-mode)
 
 
 ;; To install a package directly from a remote git repo, you must specify a

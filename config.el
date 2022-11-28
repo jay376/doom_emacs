@@ -63,3 +63,7 @@
 (add-hook 'c-mode-hook 'google-set-c-style)
 (setq gofmt-command "goimports")
 (add-hook 'before-save-hook 'gofmt-before-save)
+(after! helm-files
+        (define-key helm-find-files-map
+          (kbd "TAB") 'helm-ff-RET)
+)
