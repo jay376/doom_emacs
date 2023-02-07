@@ -468,3 +468,11 @@ same directory as the org-buffer and insert a link to this file."
 
 (global-set-key (kbd "C-c s c") 'my-org-screenshot)
 (global-set-key (kbd "M-s s ") 'grip-restart-preview)
+
+(defun clear-files ()
+  "Remove all existing file notification watches from Emacs."
+  (interactive)
+  (maphash
+   (lambda (key _value)
+     (file-notify-rm-watch key))
+   file-notify-descriptors))
