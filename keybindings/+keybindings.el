@@ -35,7 +35,7 @@
        )
 
       ;; (:desc "search-at-point" "." #'+default/search-project-for-symbol-at-point))
-      (:desc "search-at-point" "." #'helm-projectile-rg))
+      (:desc "search-at-point" "." #'helm-projectile-rg)
       ;; (:desc "search-at-point" "." #'+default/search-project-for-symbol-at-point)
       ;; (:desc "search-at-point" "/" #'helm-projectile-grep)
 )
