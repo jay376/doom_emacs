@@ -12,4 +12,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-(setq  helm-rg--glob-string "!vendor")
+(setq  helm-rg--glob-string "")
+(setq  helm-rg--glob-string "!{vendor,git}")
+(setq  helm-rg--extra-args "-uu")
+;; (setq  helm-rg--extra-args nil)
