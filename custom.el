@@ -16,3 +16,8 @@
 (setq  helm-rg--glob-string "!{vendor,git}")
 (setq  helm-rg--extra-args "-uu")
 ;; (setq  helm-rg--extra-args nil)
+
+;; jump to compilation buffer easily
+(add-to-list 'display-buffer-alist
+             '("\\*compilation\\*" display-buffer-in-side-window
+               (side . bottom) (slot . -1)))
