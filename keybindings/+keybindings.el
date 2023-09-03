@@ -20,7 +20,8 @@
        )
 
       (:prefix ("c" . "compile")
-       :desc "helm-make"   "m" #'helm-make
+       :desc "helm-make"   "m" #'+make/run
+       ;; :desc "helm-make"   "m" #'helm-make
        :desc "recompile"   "r" #'recompile
        )
 

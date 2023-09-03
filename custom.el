@@ -18,6 +18,7 @@
 (setq  helm-rg--extra-args "-uu")
 ;; (setq  helm-rg--extra-args nil)
 
+;; jump to compilation buffer automatically
 (add-hook 'compilation-finish-functions 'switch-to-buffer-other-window 'compilation)
 ;; ;; jump to compilation buffer easily
 ;; (add-to-list 'display-buffer-alist
