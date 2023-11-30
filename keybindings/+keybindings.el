@@ -50,3 +50,15 @@
       "M-s i" #'org-toggle-item
       "M-s c" #'org-ctrl-c-minus
       )
+
+
+(map! :map rust-mode-map
+      "M-s r" #'rustic-cargo-run
+      "M-s b" #'rustic-cargo-build
+      "M-s t" #'rustic-cargo-test
+      "M-s T" #'rustic-cargo-current-test
+      "M-s c" #'rustic-cargo-check
+      "M-s B" #'rustic-cargo-bench
+      "M-s d" #'rustic-cargo-doc
+      "M-s u" #'rustic-cargo-upgrade
+      )
