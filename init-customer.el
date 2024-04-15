@@ -4,14 +4,14 @@
 (global-set-key (kbd "M-3") 'split-window-horizontally)
 (global-set-key (kbd "M-0") 'other-window)
 (global-set-key (kbd "M-p")         (quote copy-paragraph))
-;; (global-set-key (kbd "M-c")         (quote thing-copy-string-to-mark))
-(global-set-key (kbd "M-w")         (quote thing-copy-string-to-mark))
-(define-key global-map (kbd "M-c") 'thing-copy-string-to-mark)
+(global-set-key (kbd "M-c")         (quote thing-copy-string-to-mark))
+;; (global-set-key (kbd "M-w")         (quote thing-copy-string-to-mark))
+;; (define-key global-map (kbd "M-c") 'thing-copy-string-to-mark)
 (global-set-key (kbd "M-s M-s") 'new-shell)
 ;; (global-set-key ( kbd "C-\\") 'redo)
 (global-set-key ( kbd "C-\\") 'undo-fu-only-redo)
-;; (global-set-key ( kbd "C-/") 'undo)
-;; (global-set-key ( kbd "C-_") 'undo)
+(global-set-key ( kbd "C-/") 'undo)
+(global-set-key ( kbd "C-_") 'undo)
 (global-set-key "\M-r" 'replace-string)
 (global-set-key (kbd "M-s r") 'revert-buffer)
 (global-set-key (kbd "M-s ,") 'rename-buffer)
@@ -34,7 +34,6 @@
 ;; delete the last space
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (global-set-key (kbd "M-;") 'comment-or-uncomment-region)
-
 ;;(define-prefix-command 'M-m-map)
 ;;(global-set-key (kbd "M-m /") '+default/search-project-for-symbol-at-point)
 
@@ -48,10 +47,11 @@
 (define-key global-map (kbd "C-c c") 'smart-compile)
 
 ;; helm
-(global-set-key (kbd "M-x") 'helm-M-x)
+;; (global-set-key (kbd "M-x") 'counsel-M-x)
+;; (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
-;; (global-set-key (kbd "C-x f") 'helm-find-files)
-;; (global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "C-x f") 'helm-find-files)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "C-x b") 'helm-mini)
 (global-set-key (kbd "C-x C-b") 'helm-mini)
 (global-set-key (kbd "C-c h o") 'helm-occur)
@@ -428,7 +428,7 @@ Date:    %s
 
 (setq lsp-file-watch-ignored
    (quote
-    ("/Users/fangjiezhang" "[/\\\\]\\mod*" "[/\\\\]\\api*" "[/\\\\]\\github*" "[/\\\\]\\vendor*" "[/\\\\]\\.git$" "[/\\\\]\\.hg$" "[/\\\\]\\.bzr$" "[/\\\\]_darcs$" "[/\\\\]\\.svn$" "[/\\\\]_FOSSIL_$" "[/\\\\]\\.idea$" "[/\\\\]\\.ensime_cache$" "[/\\\\]\\.eunit$" "[/\\\\]node_modules$" "[/\\\\]\\.fslckout$" "[/\\\\]\\.tox$" "[/\\\\]\\.stack-work$" "[/\\\\]\\.bloop$" "[/\\\\]\\.metals$" "[/\\\\]target$" "[/\\\\]\\.ccls-cache$" "[/\\\\]\\.deps$" "[/\\\\]build-aux$" "[/\\\\]autom4te.cache$" "[/\\\\]\\.reference$")))
+    ("/Users/fangjiezhang" "[/\\\\]\\mod*" "[/\\\\]\\api*" "[/\\\\]\\.terraform*" "[/\\\\]\\github*" "[/\\\\]\\vendor*" "[/\\\\]\\.git$" "[/\\\\]\\.hg$" "[/\\\\]\\.bzr$" "[/\\\\]_darcs$" "[/\\\\]\\.svn$" "[/\\\\]_FOSSIL_$" "[/\\\\]\\.idea$" "[/\\\\]\\.ensime_cache$" "[/\\\\]\\.eunit$" "[/\\\\]node_modules$" "[/\\\\]\\.fslckout$" "[/\\\\]\\.tox$" "[/\\\\]\\.stack-work$" "[/\\\\]\\.bloop$" "[/\\\\]\\.metals$" "[/\\\\]target$" "[/\\\\]\\.ccls-cache$" "[/\\\\]\\.deps$" "[/\\\\]build-aux$" "[/\\\\]autom4te.cache$" "[/\\\\]\\.reference$")))
 (setq doom-leader-alt-key "M-m")
 (setq flycheck-checker-error-threshold 10)
 

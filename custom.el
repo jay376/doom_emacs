@@ -6,7 +6,10 @@
  ;; If there is more than one, they won't work right.
  '(helm-candidate-number-limit 10000)
  '(package-selected-packages
-   '(helm-rg helm-org helm-make helm company-terraform terraform-mode helm-gtags)))
+   '(helm-rg helm-org helm-make helm company-terraform terraform-mode helm-gtags))
+ '(persp-remove-buffers-from-nil-persp-behaviour nil)
+ '(persp-reset-windows-on-nil-window-conf nil)
+ '(projectile-enable-caching t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -24,3 +27,5 @@
 ;; (add-to-list 'display-buffer-alist
 ;;              '("\\*compilation\\*" display-buffer-in-side-window
 ;;                (side . bottom) (slot . -1)))
+
+(global-set-key (kbd "M-x") 'counsel-M-x)

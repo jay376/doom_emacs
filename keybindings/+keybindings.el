@@ -25,11 +25,11 @@
        :desc "recompile"   "r" #'recompile
        )
 
-      (:prefix ("t" . "major")
-       :desc "test-single"   "s" #'+go/test-single
-       :desc "test-rerun"   "r" #'+go/test-rerun
-       :desc "test-rerun"   "a" #'+go/test-all
-       )
+      ;; (:prefix ("t" . "major")
+      ;;  ;; :desc "test-single"   "s" #'+go/test-single
+      ;;  ;; :desc "test-rerun"   "r" #'+go/test-rerun
+      ;;  ;; :desc "test-rerun"   "a" #'+go/test-all
+      ;;  )
 
       (:prefix ("s" . "search")
        :desc "search-buffer"   "." #'swiper-isearch-thing-at-point
@@ -51,14 +51,32 @@
       "M-s c" #'org-ctrl-c-minus
       )
 
+;; (general-define-key
+;;  :keymaps 'general-override-mode-map
+;;  (kbd "M-m t r") nil) ; Unbinds space in general-override-mode-map
+;; ;; (define-key rust-mode-map  "M-m t r" nil)
+
+(map! :map general-override-mode-map
+      "M-m t r" nil
+      "M-m t s" nil
+      )
+
+
+(map! :map go-mode-map
+      "M-m l r" #'+go/test-rerun
+      "M-m l t" #'+go/test-all
+      "M-m l s" #'+go/test-single
+      )
+
 
 (map! :map rust-mode-map
-      "M-s r" #'rustic-cargo-run
-      "M-s b" #'rustic-cargo-build
-      "M-s t" #'rustic-cargo-test
-      "M-s T" #'rustic-cargo-current-test
-      "M-s c" #'rustic-cargo-check
-      "M-s B" #'rustic-cargo-bench
-      "M-s d" #'rustic-cargo-doc
-      "M-s u" #'rustic-cargo-upgrade
+      "M-m l g" #'rustic-cargo-run
+      "M-m l b" #'rustic-cargo-build
+      "M-m l t" #'rustic-cargo-test
+      "M-m l s" #'rustic-cargo-current-test
+      "M-m l r" #'rustic-cargo-test-rerun
+      "M-m l c" #'rustic-cargo-check
+      "M-m l B" #'rustic-cargo-bench
+      "M-m l d" #'rustic-cargo-doc
+      "M-m l u" #'rustic-cargo-upgrade
       )
