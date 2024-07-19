@@ -9,6 +9,8 @@
 ;; (define-key global-map (kbd "M-c") 'thing-copy-string-to-mark)
 (global-set-key (kbd "M-s M-s") 'new-shell)
 ;; (global-set-key ( kbd "C-\\") 'redo)
+(global-set-key ( kbd "M-\\") 'undo-fu-only-redo)
+(global-set-key ( kbd "M-/") 'undo)
 (global-set-key ( kbd "C-\\") 'undo-fu-only-redo)
 (global-set-key ( kbd "C-/") 'undo)
 (global-set-key ( kbd "C-_") 'undo)

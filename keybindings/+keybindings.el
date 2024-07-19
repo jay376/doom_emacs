@@ -20,8 +20,8 @@
        )
 
       (:prefix ("c" . "compile")
-       :desc "helm-make"   "m" #'+make/run
-       ;; :desc "helm-make"   "m" #'helm-make
+       ;; :desc "helm-make"   "m" #'+make/run
+       :desc "helm-make"   "m" #'helm-make
        :desc "recompile"   "r" #'recompile
        )
 
@@ -77,6 +77,9 @@
       "M-m l r" #'rustic-cargo-test-rerun
       "M-m l c" #'rustic-cargo-check
       "M-m l B" #'rustic-cargo-bench
-      "M-m l d" #'rustic-cargo-doc
+      ;; "M-m l d" #'rustic-cargo-doc
       "M-m l u" #'rustic-cargo-upgrade
+      "M-m l a" #'rustic-cargo-add
+      "M-m l d" #'rustic-cargo-rm
+      "M-m r a" #'rustic-cargo-new
       )
